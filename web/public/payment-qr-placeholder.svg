@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="720" viewBox="0 0 720 720" role="img" aria-label="收款码占位图">
+  <rect width="720" height="720" fill="#f3f0e4"/>
+  <rect x="32" y="32" width="656" height="656" fill="none" stroke="#0a0a08" stroke-width="12"/>
+  <rect x="96" y="96" width="150" height="150" fill="none" stroke="#0a0a08" stroke-width="18"/>
+  <rect x="474" y="96" width="150" height="150" fill="none" stroke="#0a0a08" stroke-width="18"/>
+  <rect x="96" y="474" width="150" height="150" fill="none" stroke="#0a0a08" stroke-width="18"/>
+  <rect x="135" y="135" width="72" height="72" fill="#0a0a08"/>
+  <rect x="513" y="135" width="72" height="72" fill="#0a0a08"/>
+  <rect x="135" y="513" width="72" height="72" fill="#0a0a08"/>
+  <path d="M302 102h58v58h-58zM398 102h38v96h-38zM302 198h96v38h-96zM474 302h58v58h-58zM570 302h38v134h-38zM302 302h134v38H302zM302 378h58v58h-58zM398 398h96v38h-96zM302 494h58v134h-58zM398 494h38v38h-38zM474 494h134v38H474zM398 570h96v58h-96zM532 570h76v58h-76z" fill="#0a0a08"/>
+  <rect x="96" y="286" width="528" height="134" fill="#f3f0e4" stroke="#0a0a08" stroke-width="8"/>
+  <text x="360" y="342" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-size="34" fill="#0a0a08">替换为收款码</text>
+  <text x="360" y="386" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#0a0a08">WeChat / Alipay QR</text>
+</svg>

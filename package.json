@@ -1,0 +1,19 @@
+{
+  "name": "hurdle-club-website",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "web",
+    "service"
+  ],
+  "scripts": {
+    "dev": "concurrently -n service,web -c magenta,cyan \"npm run dev -w service\" \"npm run dev -w web\"",
+    "build": "npm run build -w web",
+    "start": "npm run start -w web",
+    "seed": "npm run seed -w service",
+    "start:service": "npm run start -w service"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}

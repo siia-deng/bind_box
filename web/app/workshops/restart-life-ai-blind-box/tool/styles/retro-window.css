@@ -1,0 +1,331 @@
+.retro-font-mono {
+  font-family: var(--font-retro-mono), "Courier New", Courier, monospace;
+}
+
+.retro-font-ui {
+  font-family: var(--font-retro-mono), Arial, Helvetica, sans-serif;
+}
+
+.retro-shell {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100dvh;
+  overflow: hidden;
+  color: var(--retro-ink);
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.retro-shell-scroll {
+  overflow-y: auto;
+}
+
+.retro-window {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  min-width: 0;
+  border: var(--retro-border);
+  border-radius: var(--retro-radius);
+  box-shadow: var(--retro-shadow);
+  background: var(--retro-surface);
+  overflow: hidden;
+}
+
+.retro-window-titlebar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 28px;
+  padding: 4px 8px;
+  border-bottom: var(--retro-border);
+}
+
+.retro-window-close {
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+  border: 1px solid var(--retro-ink);
+  background: var(--retro-surface);
+}
+
+.retro-window-title {
+  flex: 1;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.retro-window-body {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+}
+
+.retro-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-height: 36px;
+  padding: 6px 14px;
+  border: var(--retro-border);
+  border-radius: var(--retro-radius);
+  box-shadow: var(--retro-shadow);
+  background: var(--retro-surface);
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--retro-ink);
+  transition: transform 0.05s ease, box-shadow 0.05s ease;
+}
+
+.retro-btn:active:not(:disabled) {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0 #000;
+}
+
+.retro-btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.retro-btn-primary {
+  background: var(--retro-ink);
+  color: var(--retro-surface);
+}
+
+.retro-btn-accent {
+  background: var(--retro-accent);
+  color: #fff;
+}
+
+.retro-btn-alert {
+  background: var(--retro-alert);
+  color: #fff;
+}
+
+.retro-window-stage {
+  overflow: hidden;
+  min-width: 0;
+}
+
+.retro-window-stage > .retro-window-body {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  min-width: 0;
+}
+
+.retro-window-stage-drawing {
+  overflow: visible;
+}
+
+.retro-window-stage-drawing > .retro-window-body {
+  overflow: visible;
+}
+
+.retro-inventory-slot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  min-width: 80px;
+  padding: 6px;
+  border: var(--retro-border);
+  background: var(--retro-surface);
+  box-shadow: 2px 2px 0 #000;
+}
+
+.retro-inventory-slot-active {
+  background: var(--retro-ink);
+  color: var(--retro-surface);
+  transform: translateY(-4px);
+  box-shadow: 4px 6px 0 #000;
+  z-index: 3;
+}
+
+.retro-inventory-slot-filled {
+  border-width: 3px;
+  background: var(--retro-surface-alt);
+}
+
+.retro-inventory-slot-dense {
+  min-width: 44px;
+  gap: 2px;
+  padding: 3px 4px 4px;
+  box-shadow: 1px 1px 0 #000;
+}
+
+.retro-inventory-slot-dense .retro-slot-label {
+  font-size: 8px;
+  letter-spacing: 0;
+  line-height: 1;
+}
+
+.retro-inventory-slot-dense.retro-inventory-slot-active {
+  transform: translateY(-2px);
+  box-shadow: 2px 3px 0 #000;
+}
+
+.retro-inventory-slot-active .retro-slot-label {
+  color: var(--retro-surface);
+}
+
+.retro-slot-label {
+  font-size: 9px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.retro-log-line {
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.retro-log-line-done {
+  font-weight: 700;
+}
+
+.retro-log-line-pending {
+  opacity: 0.5;
+}
+
+.retro-menubar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 28px;
+  padding: 4px 12px;
+  border-bottom: var(--retro-border);
+  background: var(--retro-surface);
+}
+
+.retro-menubar-brand {
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+}
+
+.retro-menubar-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.retro-menubar-link {
+  padding: 2px 8px;
+  font-size: 11px;
+  font-weight: 700;
+  border: 1px solid transparent;
+}
+
+.retro-menubar-link:hover {
+  border-color: var(--retro-ink);
+}
+
+.retro-verb-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 6px;
+}
+
+@media (min-width: 640px) {
+  .retro-verb-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+  }
+}
+
+.retro-verb-grid .retro-btn {
+  min-height: 40px;
+  font-size: 12px;
+}
+
+@media (min-width: 640px) {
+  .retro-verb-grid .retro-btn {
+    min-height: 44px;
+    font-size: 13px;
+  }
+}
+
+.retro-verb-grid .retro-btn-accent {
+  grid-column: span 2;
+  min-height: 44px;
+  font-size: 13px;
+  box-shadow: 5px 5px 0 #000;
+}
+
+@media (min-width: 640px) {
+  .retro-verb-grid .retro-btn-accent {
+    min-height: 48px;
+    font-size: 14px;
+  }
+}
+
+.retro-cartridge {
+  border: var(--retro-border);
+  border-radius: var(--retro-radius);
+  box-shadow: var(--retro-shadow);
+  background: var(--retro-surface);
+  overflow: hidden;
+}
+
+.retro-cartridge-accent {
+  height: 6px;
+  border-bottom: 1px solid var(--retro-ink);
+}
+
+.retro-cartridge-constraint .retro-cartridge-accent {
+  height: 8px;
+  border-bottom-width: 2px;
+}
+
+.retro-cartridge-constraint .card-illustration {
+  border-width: 3px;
+}
+
+.retro-rarity-badge {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  z-index: 10;
+  padding: 2px 6px;
+  border: 1px solid var(--retro-ink);
+  font-size: 9px;
+  font-weight: 900;
+  background: var(--retro-surface);
+}
+
+.retro-rarity-ssr {
+  background: var(--retro-alert);
+  color: #fff;
+}
+
+.retro-rarity-sr {
+  background: var(--retro-accent);
+  color: #fff;
+}
+
+.retro-counter-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border: var(--retro-border);
+  box-shadow: var(--retro-shadow);
+}
+
+.retro-counter-cell {
+  padding: 12px;
+  text-align: center;
+  border-right: var(--retro-border);
+  background: var(--retro-surface);
+}
+
+.retro-counter-cell:last-child {
+  border-right: none;
+}

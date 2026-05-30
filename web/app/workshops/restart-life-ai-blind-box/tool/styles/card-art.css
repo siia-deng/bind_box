@@ -1,0 +1,94 @@
+/* 卡面插图氛围（尤其限制卡） */
+.card-illustration {
+  background-color: var(--retro-surface-alt);
+  color: var(--retro-ink);
+}
+
+.card-illustration-img {
+  opacity: 1;
+  transition: opacity 0.15s ease;
+}
+
+.card-illustration-img-missing {
+  opacity: 0;
+}
+
+.card-illustration-icon {
+  opacity: 0.35;
+  mix-blend-mode: multiply;
+}
+
+.card-illustration:has(.card-illustration-img:not(.card-illustration-img-missing)) .card-illustration-icon {
+  opacity: 0.2;
+}
+
+.card-mood-understood {
+  background: linear-gradient(160deg, #faf3e0 0%, #e9745f33 45%, #6fa4ca44 100%);
+}
+
+.card-mood-space {
+  background: linear-gradient(180deg, #001b33 0%, #6fa4ca 55%, #121210 100%);
+  color: #faf3e0;
+}
+
+.card-mood-luxury {
+  background: linear-gradient(145deg, #121210 0%, #eacb62 40%, #faf3e0 100%);
+}
+
+.card-mood-lonely {
+  background: linear-gradient(180deg, #c0c0c0 0%, #6f6b5d 50%, #0a0a08 100%);
+  color: #faf3e0;
+}
+
+.card-mood-newbie {
+  background: linear-gradient(135deg, #6fa4ca 0%, #faf3e0 50%, #68bfa8 100%);
+}
+
+.card-mood-retro90 {
+  background:
+    repeating-linear-gradient(90deg, #0044aa 0 8px, #cc0000 8px 16px, #eacb62 16px 24px),
+    #faf3e0;
+  background-size: 24px 100%, auto;
+}
+
+.card-mood-restart {
+  background: linear-gradient(160deg, #68bfa8 0%, #faf3e0 40%, #e9745f 100%);
+}
+
+.card-mood-urban {
+  background: linear-gradient(180deg, #0a0a08 0%, #6f6b5d 35%, #e9745f 100%);
+  color: #faf3e0;
+}
+
+.card-mood-child {
+  background: linear-gradient(145deg, #e9745f 0%, #eacb62 35%, #68bfa8 70%, #6fa4ca 100%);
+}
+
+.card-mood-healing {
+  background: linear-gradient(180deg, #68bfa8 0%, #faf3e0 60%, #6fa4ca55 100%);
+}
+
+.card-mood-coral {
+  background: linear-gradient(180deg, #e9745f44, #faf3e0);
+}
+
+.card-mood-sky {
+  background: linear-gradient(180deg, #6fa4ca55, #faf3e0);
+}
+
+.card-mood-mint {
+  background: linear-gradient(180deg, #68bfa855, #faf3e0);
+}
+
+.card-mood-gold {
+  background: linear-gradient(180deg, #eacb6255, #faf3e0);
+}
+
+.card-mood-ink {
+  background: linear-gradient(180deg, #0a0a08, #6f6b5d);
+  color: #faf3e0;
+}
+
+.card-illustration-caption {
+  box-shadow: 0 -2px 0 #000;
+}

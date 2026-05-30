@@ -1,0 +1,22 @@
+:root {
+  --retro-desktop: #6fa4ca;
+  --retro-surface: #faf3e0;
+  --retro-surface-alt: #c0c0c0;
+  --retro-ink: #000000;
+  --retro-accent: #0044aa;
+  --retro-alert: #cc0000;
+  --retro-border-width: 2px;
+  --retro-border: 2px solid #000000;
+  --retro-shadow: 4px 4px 0 #000000;
+  --retro-radius: 2px;
+  --retro-mono-bg: #001b33;
+  --retro-mono-surface: #1a1a1a;
+  --retro-mono-text: #faf3e0;
+}
+
+.retro-theme-mono {
+  --retro-desktop: var(--retro-mono-bg);
+  --retro-surface: var(--retro-mono-surface);
+  --retro-surface-alt: #2a2a2a;
+  --retro-ink: var(--retro-mono-text);
+}
