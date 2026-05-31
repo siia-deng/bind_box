@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
+const publicBasePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 export const metadata: Metadata = {
   title: {
     default: "Hurdle Club | AI Workshop for Everyone",
@@ -14,7 +16,7 @@ export const metadata: Metadata = {
     locale: "zh_CN"
   },
   icons: {
-    icon: "/hurdle-club-logo.svg"
+    icon: `${publicBasePath}/hurdle-club-logo.svg`
   }
 };
 

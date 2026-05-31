@@ -6,6 +6,8 @@ import { BadgeCheck, QrCode, Send, ShieldCheck } from "lucide-react";
 import { clientApiBase } from "../lib/api";
 import type { Session, Workshop } from "../lib/types";
 
+const publicBasePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 type FormState = "idle" | "submitting" | "success" | "error";
 type RegistrationResult = {
   verificationCode?: string;
@@ -92,7 +94,7 @@ export function RegisterForm({ workshop, sessions }: { workshop: Workshop; sessi
         <div className="grid gap-5 md:grid-cols-[240px_1fr] md:items-center">
           <div className="paper-border bg-paper p-3">
             <Image
-              src="/payment-qr-placeholder.svg"
+              src={`${publicBasePath}/payment-qr-placeholder.svg`}
               alt="活动收款码"
               width={720}
               height={720}
