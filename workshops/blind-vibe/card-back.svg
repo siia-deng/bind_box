@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 420" fill="none">
+  <rect width="280" height="420" fill="#C0C0C0"/>
+  <rect x="8" y="8" width="264" height="404" fill="#FAF3E0" stroke="#000" stroke-width="2"/>
+  <rect x="24" y="24" width="232" height="48" fill="#000" opacity="0.08"/>
+  <rect x="40" y="100" width="200" height="220" fill="#C0C0C0" stroke="#000" stroke-width="2"/>
+  <rect x="52" y="112" width="176" height="196" fill="#FAF3E0" stroke="#000" stroke-width="1"/>
+  <rect x="100" y="340" width="80" height="12" fill="#000" opacity="0.15"/>
+  <text x="140" y="220" text-anchor="middle" fill="#000" font-family="Courier New,monospace" font-size="32" font-weight="700">BV</text>
+  <text x="140" y="260" text-anchor="middle" fill="#000" font-family="Courier New,monospace" font-size="9" opacity="0.5" letter-spacing="3">CARTRIDGE</text>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <pattern id="dither" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="2" height="2" fill="#000" opacity="0.06"/>
+      <rect x="2" y="2" width="2" height="2" fill="#000" opacity="0.06"/>
+      <rect x="2" y="0" width="2" height="2" fill="#fff" opacity="0.04"/>
+      <rect x="0" y="2" width="2" height="2" fill="#fff" opacity="0.04"/>
+    </pattern>
+  </defs>
+  <rect width="1920" height="1080" fill="#6FA4CA"/>
+  <rect width="1920" height="1080" fill="url(#dither)"/>
+</svg>
